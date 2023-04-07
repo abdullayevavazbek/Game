@@ -1,0 +1,624 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/Open_Sans/OpenSans/OpenSans-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+
+body {
+    background-color: #080A0B;
+    color: #fff;
+    margin: 0;
+}
+
+
+nav {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 2.5%;
+    position: absolute;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    line-height: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.langProgramms {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+
+}
+
+.langProgramms select {
+    width: 70px;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 7px;
+}
+
+.langProgramms select:focus {
+    outline: none;
+}
+
+.langProgramms .first {
+    height: 40px;
+    margin: 0;
+}
+
+
+.langProgramms a {
+    margin-top: 7px;
+}
+
+/* navbar ended */
+/* Showcase start */
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(310.48% 100% at 50% 0%, rgba(0, 0, 0, 0.53) 5.96%, rgba(29, 35, 52, 0.47) 89.85%, #08090A 99.66%), url("./images/valhallaback.png");
+    background-position: center top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+
+h1,
+p {
+    margin: 0;
+}
+
+.showcase .infoBlock {
+    width: 50%;
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+}
+
+.showcase .infoBlock h1 {
+    margin-bottom: 15px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.showcase .infoBlock p {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
+}
+
+.showcase .infoBlock button {
+    margin: 48px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 25px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #3DB8A5;
+
+    background: linear-gradient(194.68deg, rgba(158, 218, 209, 0.1) 11.27%, rgba(61, 179, 162, 0.1) 90.4%);
+    /* Main */
+
+    border: 2px solid #3DB8A5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(17.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 6px;
+}
+
+.showcase .infoBlock button hr {
+    height: 38px;
+
+    border: 1px solid #3DB8A5;
+}
+
+
+.showcase .infoBlock .scroll {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.showcase .infoBlock .scroll p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+.scroll img{
+    position: relative;
+    animation-name: imgg;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imgg{
+    0%{
+        top: 0;
+    }100%{
+        top: 40px;
+    }
+}
+/* showcase end */
+
+
+/* About starts */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000, #000000ab, #000000ee),  url("./images/bg\ image\ 2.png") ;
+}
+
+.about .left, .about .right{
+    width: 45%;
+    height: 60%;
+    color: #FFFFFF; 
+    padding:0 20px;
+    box-sizing: border-box;
+}
+
+.about .left h2{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
+
+.about .left h2 span{
+    font-size: 25px;
+    line-height: unset;
+}
+
+.about .left  .description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 34px;
+}
+
+
+.about .left  .description p{
+    width: 80%;
+    align-self: flex-end;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+text-align: justify;
+}
+
+
+
+.about .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .right .images{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+.about .right .images img{
+    position: absolute;
+    transition: all .75s;
+}
+
+.about .right .images img:first-child{
+    width: 90%;
+    z-index: 3;
+}
+
+.about .right .images img:nth-child(2){
+    width: 80%;
+    height: 85%;
+    top: 25px;
+    left: 66px;
+    z-index: 2;
+}
+
+.about .right .images img:nth-child(3){
+    width: 70%;
+    height: 75%;
+    top: 35px;
+    left: 126px;
+    z-index: 1;
+}
+
+
+.about .right .images img:hover{
+    z-index: 4;
+    transform: scale(1.2);
+}
+
+/* About ended */
+
+/* 3page starts */
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000, #0000006b, #000000ee),  url( "./images/big\ picture\ 3.png") ;
+}
+
+.text-section{
+    /* border: 1px solid red; */
+    margin: 265px 0 333px 700px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+width: 548px;
+height: 670px;
+}
+
+.text-section .right1{
+margin-bottom: 64px;
+display: flex;
+flex-direction: column;
+text-align: start;
+padding: 0px;
+width: 400px;
+height: 200px;
+}
+
+.right1 h3{
+margin-right: 500px;
+width: 188px;
+height: 30px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+letter-spacing: 2px;
+
+color: #ffffff47;
+}
+
+
+.right1 h1{
+    width: 326px;
+height: 100px;
+
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 100px;
+/* identical to box height */
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #ffffff96;
+}
+.right2{
+    margin: 0 106px 79px 40px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 11px;
+
+width: 377px;
+height: 138.7px;
+}
+
+.infomation{
+    gap: 79px;
+}
+
+.infomation .Features1{
+    width: 377px;
+    height: 50px;
+    margin-bottom: 11px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 2px;
+    color: #3DB3A2;
+}
+
+.infomation .paragraph{
+margin: 11px 20px 79px 0;
+width: 362.52px;
+height: 77.7px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+text-align: justify;
+color: #FFFFFF;
+}
+
+.infomation .Features2{
+    /* border: 1px solid red; */
+    margin: 79px 0;
+    width: 483px;
+height: 50px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 50px;
+/* identical to box height */
+letter-spacing: 2px;
+color: #3DB3A2;
+}
+
+.infomation .Features3{
+    /* border: 1px solid red; */
+    width: 393px;
+height: 50px;
+margin-top: 79px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 50px;
+/* identical to box height */
+
+letter-spacing: 2px;
+
+color: #3DB3A2;
+}
+
+/* page3 ended */
+
+
+/* page4 starts */
+
+
+.page4{ 
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000000, #00000068, #000000ee),  url( "./images/big\ picture\ 4.png") ;
+   
+}
+
+.title{
+margin: 153px 700px 80px 700px;
+width: 800px;
+height: 100px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+letter-spacing: 2px;
+color: #FFFFFF;
+text-align: center;
+}
+
+.top{
+height: 30px;
+padding: 10px;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+letter-spacing: 2px;
+
+color: #FFFFFF;
+}
+
+.next{
+    Font-family: 'Bebas Neue';
+    font-style:Bold;
+    Font-size: 80px;
+    Line-height: 100%;
+    Vertical-align : Top;
+    Letter-spacing: 3px;
+color: #FFFFFF;
+}
+
+
+.page4 .table {
+    margin: 100px 200px;
+    width: 550px;
+    height: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.591);
+    color: #ffffff;
+}
+ .table .green{
+    color: #3DB8A5;
+ }
+ .table tr td{
+    line-height: 25px;
+ }
+
+ /* pag4 ended */
+
+ /* page5 started */
+
+
+ .page5{
+    width: 100%;
+    height: 100vh;
+}
+
+ .pictureS{
+    width: 445px;
+    height: 100%;
+ }
+ .brand{
+    margin-top: 65px;
+    margin-left: 200px;
+    width: 1416px;
+    height: 695px;
+    display: flex;
+ }
+ .inform{
+    width: 900px;
+    height: 100%;
+    padding-left: 135px;
+    padding-top: 134px;
+ }
+ .inform .parr{
+    width: 270px;
+    height: 30px;
+    font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+/* identical to box height */
+
+letter-spacing: 2px;
+
+color: #FFFFFF;
+ }
+ .inform h1{
+    width: 799px;
+height: 100px;
+
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 100px;
+/* identical to box height */
+
+letter-spacing: 3px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-top: 6px;
+ }
+ .inform .parg{
+    width: 600px;
+height: 105px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* or 150% */
+
+
+color: #FFFFFF;
+ }
+ .inform input{
+    margin: 0;
+    width: 364px;
+height: 50px;
+
+background: rgba(255, 255, 255, 0.08);
+border-radius: 5px;
+margin-top: 110px;
+ }
+ .inform button{
+    width: 200px;
+height: 50px;
+margin-left: 20px;
+
+/* Main */
+
+background: #3DB8A5;
+border-radius: 4px;
+ }
